@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		
+		<property name="hibernate.connection.url">jdbc:mysql://66.147.242.193/vogelpla_survey</property>
+		<property name="hibernate.connection.username">vogelpla_surveyU</property>
+		<property name="hibernate.connection.password">Maharjan@049</property>
+		<!--Here we are mapping Pojo class not hbm -->
+		<mapping class="com.december.resources.vo.SurveyAVO" />
+	</session-factory>
+</hibernate-configuration>
